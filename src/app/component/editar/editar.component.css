@@ -1,0 +1,37 @@
+
+.formulario{
+    flex-direction: column;
+    width: 350px;
+
+}
+.items{
+    margin: 10px;
+}
+.label{
+    margin: 5px 10px;
+}
+.editar-e{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #aafa ;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+@media (max-width:750px){
+    .editar{
+        flex-wrap: wrap;
+    }
+    .editar-e{
+        flex-wrap: wrap;
+    }
+    .proyectos{
+        max-width: 80%;
+    }
+    
+*{
+    width: 90%;
+}
+}

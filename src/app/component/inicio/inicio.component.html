@@ -1,0 +1,46 @@
+<article class=" d-flex justify-content-between " *ngFor="let seba of sebastian">
+    <div class="contenedor-articulo d-flex justify-content-between">
+        <div class="item-articulo"></div>
+        <div class="">
+            
+            
+    <tr >
+        <td class="descrip">{{seba.descripcion}}</td>
+    </tr>
+        </div>
+    </div>
+    <div class="habilidades">
+        <div>
+            <div>
+                <div class="d-flex justify-content-center">
+                <p style="width: 200px;color: #fff; text-align:center;padding: 10px;font-size: 20px;" class="rounded p-3 mb-2 bg-primary text-white">Habilidades</p>
+                </div>
+            </div>
+    <div class="d-flex justify-content-center align-items-center">
+        
+        <input type="button" value="Next" (click)="next()" class="d-flex justify-content-end align-self-end btn btn-primary" >
+    </div>
+        <div class="carrusel-cont" >
+            
+            <div>
+                <ul class="d-flex justify-content-center align-items-center" style="margin-top: 70px; list-style: none;text-align: center;"
+                [ngStyle]="{visibility: siguiente ==true? 'visible':'hidden','margin-right': siguiente?'00px':'1000px',transition:'margin-right .7s, visibility .4s'}">
+                    <li class="item-c"></li>
+                    <li class="item-c"></li>
+                    <li class="item-c"></li>
+                </ul>
+            </div> 
+            <div>
+                
+                <ul class="d-flex justify-content-center align-items-center aaa" style="margin-top: -220px; list-style: none;text-align: center;"
+                [ngStyle]="{visibility: siguiente ==false? 'visible':'hidden','margin-right': siguiente?'1000px':'0px',transition:'margin-right .7s, visibility .4s'}">
+                    <li class="item-c1"></li>
+                    <li class="item-c1"></li>
+                    <li class="item-c1"></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</article>

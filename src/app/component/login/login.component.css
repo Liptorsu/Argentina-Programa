@@ -1,0 +1,7 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 220px;
+    width: 250px;
+}

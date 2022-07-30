@@ -1,0 +1,32 @@
+<header class="header" *ngFor="let seba of sebastian">
+    <h2>{{seba.nombre}} {{seba.apellido}}</h2>
+    <div class="logo">
+        <p>a</p>
+    </div>
+    <ul class="contenedor">
+        <li class="itemss" (click)="inicio()">Inicio</li>
+        <li class="itemss" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</li>
+        <li class="itemss" (click)="login()" *ngIf="!isLogged">Login</li>
+        <li class="itemss" (click)="proyectos()">Educacion</li>
+        <li class="itemss" (click)="editar()">Editar</li>
+        <li class="itemss" (click)="contacto()">Contacto</li>
+    </ul>
+</header>
+<header class="header-responsive bg-primary justify-content-between" style="height: 70px;" *ngFor="let seba of sebastian">
+    <h2>{{seba.nombre}} {{seba.apellido}}</h2>
+    <div>
+    <h3 style="margin-top: 25px;margin-left: 20px;" (click)="desplegar()">Menu</h3>
+</div>
+    <div class="menu" [ngStyle]="{top: toggle? '70px':'',transition: '1s'}">
+    <ul class="contenedor-resp  d-flex justify-content-center align-items-center" >
+        <li style="font-size: 20px;" class="itemss-resp " (click)="inicio()">Inicio</li>
+        <li style="font-size: 20px;" class="itemss-resp "  (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</li>
+        <li style="font-size: 20px;" class="itemss-resp "  (click)="login()" *ngIf="!isLogged">Login</li>
+        <li style="font-size: 20px;" class="itemss-resp " (click)="proyectos()">Educacion</li>
+        <li style="font-size: 20px;" class="itemss-resp " (click)="editar()">Editar</li>
+        <li style="font-size: 20px;" class="itemss-resp " (click)="contacto()">Contacto</li>
+        <div class="logo">
+            <p>a</p>
+        </div>
+    </ul></div>
+</header>

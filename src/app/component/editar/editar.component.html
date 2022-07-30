@@ -1,0 +1,54 @@
+<article class="editar d-flex" style="width: 80vw;margin:100px auto;" *ngFor="let seba of sebastian" >
+    <div class="container d-flex justify-content-center align-items-center" >
+        <form action="" class="d-flex  formulario">
+            <h2 style="color: #666;text-align: center;">Informacion</h2>
+            <label for="" class="label">Nombre</label>
+            <input type="text" class="items"  [formControl]="nombre">
+            <label for="" class="label" >Apellido</label>
+            <input type="text" class="items" [formControl]="apellido">
+            <label for="" class="label" >Descripcion</label>
+            <input type="text" class="items" [formControl]="descripcion">
+            <input type="submit" (click)="updateSebastian()" value="Editar" style=" padding: 5px 20px;margin: 20px 10px;" class="btn btn-primary">
+        </form>
+    </div> 
+    <div class="container d-flex justify-content-center align-items-center" style="margin-top:10px;">
+        <form action="" class="d-flex formulario">
+            <h2 style="color: #666;text-align: center;">Estudio</h2>
+            <label for="" class="label">Escuela</label>
+            <input type="text" class="items"  [formControl]="establecimiento">
+            <label for="" class="label" >Titulo</label>
+            <input type="text" class="items"  [formControl]="titulo">
+            <label for="" class="label">Año</label>
+            <input type="text" class="items" [formControl]="anio">
+            <div style="text-align:center; padding: 15px;" >
+            <input type="submit" style=" padding: 5px 15px;margin: 0px 10px"(click)="saveEstudio()" value="Agregar" class="btn btn-primary">
+        <button (click)="toggle()" style=" padding: 5px 20px;margin:0px 10px;"  class="btn btn-primary">Editar</button>
+    </div>
+        </form>
+
+    </div> 
+    <div class="editar-e" [ngStyle]="{display: tgl==true? 'none':'flex'}">
+        <div>
+        <app-proyectos class="proyectos"></app-proyectos>
+    </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            
+        <button (click)="toggle()" style="position: absolute;top:40px;left:40px;width: 50px;" class="btn btn-primary">X</button>
+            <form action="" class="d-flex formulario">
+                <h2 style="color: #666;text-align: center;">Estudio</h2>
+                <label for="" class="label">Numero que desea editar/eliminar</label>
+                <input type="number" class="items"  [formControl]="id">
+                <label for="" class="label">Escuela</label>
+                <input type="text" class="items"  [formControl]="establecimiento">
+                <label for="" class="label" >Titulo</label>
+                <input type="text" class="items"  [formControl]="titulo">
+                <label for="" class="label">Año</label>
+                <input type="text" class="items" [formControl]="anio">
+                <input type="submit" (click)="updateEstudios()" value="Editar" class="btn btn-primary" style="margin-top:10px">
+                <input type="submit" (click)="removerEstudio()" value="Eliminar" class="btn btn-primary" style="margin-top:10px">
+            </form>
+        
+
+        </div>
+    </div>
+</article>

@@ -1,0 +1,98 @@
+footer{
+    position:fixed;
+    height: 150px;
+    width: 50px;
+    background-color: rgb(60, 69, 255);
+    bottom: 0;
+    margin-left: 50px;
+    border-radius: 10px 10px 0 0;
+    
+}
+.footr-item{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.icon{
+    color:transparent;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 8px;
+    background-image: url("../../../../Redes/facebook.png");
+    background-position: center;
+    background-size: contain;
+}
+.icon2{
+    color:transparent;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 10px;
+    background-image: url("../../../../Redes/instagram.png");
+    background-position: center;
+    background-size: contain;
+}
+.icon3{
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: 20px;
+    color:#fff;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+
+.footr-item:hover{
+    width: 150px;
+    transition: .7s;
+    
+    
+}
+.footr-item:hover:nth-child(1){
+    
+    background-color: rgb(60, 69, 255);
+    
+}
+.footr-item:hover:nth-child(2){
+    
+    background-color: rgb(216, 159, 27);
+    
+}
+.footr-item:hover:nth-child(3){
+    
+    background-color: rgb(0, 0, 0);
+    background-image: url("../../../../Redes/LogoArgPr.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.footr-item:hover .redes{
+    
+    color: #fff;
+     transition: color .8s;
+    }
+.redes{
+    display: inline;
+    color: transparent;
+    width: 80px;
+    height: 40px;
+    padding-left: 20px;
+}
+@media (max-width:750px){
+    footer{
+        margin-left: 0;
+    }
+}

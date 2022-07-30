@@ -1,0 +1,26 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { JwtDto } from '../jwt-dto';
+import { LoginUsuario } from '../login-usuario';
+import { NuevoUsuario } from '../nuevo-usuario';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+
+  authURL='https://argportafolio.herokuapp.com/auth/';
+  //authURL= 'http://localhost:8080/auth/';
+
+  constructor(private httpClient : HttpClient) { }
+
+  public nuevoUsuario(nuevoUsuario:NuevoUsuario):Observable<any>{
+      return this.httpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
+  }
+
+  public loginUsuario(loginUsuario:LoginUsuario):Observable<JwtDto>{
+    return this.httpClient.post<JwtDto>(this.authURL + 'login',loginUsuario)
+  }
+
+}

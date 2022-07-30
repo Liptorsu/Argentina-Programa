@@ -1,0 +1,89 @@
+article{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    height: 80vh;
+}
+.contenedor-articulo{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+.item-articulo{
+    margin-top: 25px;
+    margin-left: 20px;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url("../../../../Redes/seba2.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.carrusel-cont{
+    width: 100vw;
+    height: 200px;
+}
+.item-c{
+    width: 100px;
+    height: 160px;
+    margin-right: 25px;
+    background-color: transparent;
+    background-image: url("../../../../Redes/Skills/css.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.item-c:nth-child(2){
+    background-image: url("../../../../Redes/Skills/HTML.jpg");
+    
+}
+.item-c:nth-child(3){
+    background-image: url("../../../../Redes/Skills/js.jpg");
+    
+}
+
+.item-c1{
+    width: 100px;
+    height: 160px;
+    margin-right: 25px;
+    margin-top: 10px;
+    background-color: transparent;
+    background-image: url("../../../../Redes/Skills/angular.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.item-c1:nth-child(2){
+    background-image: url("../../../../Redes/Skills/bootstrap.png");
+    
+}
+.item-c1:nth-child(3){
+    background-image: url("../../../../Redes/Skills/java.jpg");
+    
+}
+
+
+.descrip{
+    text-align: center;
+    width: 40vw;
+    height: 70%;
+}
+@media (max-width:750px) {
+    .contenedor-articulo{
+        min-height: 80vh;
+    }
+    .descrip{
+        width: 60vw;
+    }
+    .item-articulo{
+        min-width: 150px;
+        min-height: 150px;
+        margin-top: 120px;
+    }
+}

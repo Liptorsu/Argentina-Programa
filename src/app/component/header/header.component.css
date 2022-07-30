@@ -1,0 +1,72 @@
+.header{
+    height: 80px;
+    background-color: hsl(236, 100%, 60%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: space-between;
+    
+}
+.logo{
+    color:transparent;
+    margin-top: 5px;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    background-image: url("../../../../Redes/LogoArgPr.jpg");
+    background-size: contain;
+}
+.header-responsive{
+    display: none;
+}
+h2{
+    margin: 25px;
+    margin-left: 50px;
+}
+.contenedor{
+    margin: 30px ;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.itemss{
+    margin-left: 20px;
+    cursor: pointer;
+}
+@media (max-width:750px){
+    .header{
+        display: none;
+    }
+
+.logo{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-responsive{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 100%;
+    
+}
+.contenedor-resp{
+    flex-direction: column;
+}
+.menu{
+    position: absolute;
+    left: 0;
+    top: -800px;
+    height: 80vh;
+    width: 100vw;
+    background-color: #44fa;
+    z-index: 10;
+}
+.itemss-resp{
+    margin:40px 20px 20px 20px;
+    list-style: none;
+}
+}

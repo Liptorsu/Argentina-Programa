@@ -1,0 +1,12 @@
+.contactos{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 100px;
+    
+}
+@media (max-width:750px){
+    .contactos{
+        margin: 100px 0;
+    }
+}
